@@ -1,0 +1,6 @@
+{
+  "name": "Agentic Chatbot",
+  "description": "An elegant, barebones customer support chatbot utilizing the server-side Gemini 3.5 Flash model.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
