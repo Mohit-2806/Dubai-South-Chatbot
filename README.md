@@ -1,20 +1,97 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Dubai South AI Chatbot
 
-# Run and deploy your AI Studio app
+An AI-powered customer support chatbot for Dubai South built with React, Vite, TypeScript, Express, and the MagOneAI workflow platform.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/c7e23738-10a5-419b-901f-03173a58693d
+- AI-powered customer support
+- Real-time chat interface
+- Responsive modern UI
+- Secure HMAC authentication with MagOneAI
+- Markdown-formatted responses
+- Session-based conversations
+- Express backend with React frontend
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- React
+- TypeScript
+- Vite
+- Express.js
+- Tailwind CSS
+- MagOneAI API
 
+## Installation
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Clone the repository:
+
+```bash
+git clone https://github.com/<your-username>/<repository-name>.git
+cd <repository-name>
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+## Environment Variables
+
+Create a `.env` file in the project root.
+
+```env
+MAGONE_API_URL=YOUR_MAGONE_API_URL
+MAGONE_SECRET=YOUR_MAGONE_SECRET
+MAGONE_USE_CASE_ID=YOUR_USE_CASE_ID
+```
+
+## Running the application
+
+```bash
+npm run dev
+```
+
+The application will start on:
+
+```
+http://localhost:3000
+```
+
+## Project Structure
+
+```
+src/
+ ├── App.tsx
+ ├── main.tsx
+ ├── index.css
+ └── types.ts
+
+server.ts
+package.json
+vite.config.ts
+tsconfig.json
+```
+
+## Architecture
+
+```
+React Frontend
+       │
+       ▼
+Express Backend
+       │
+       ▼
+MagOneAI Workflow API
+       │
+       ▼
+Dubai South Knowledge Base
+```
+
+## Security
+
+API credentials are stored in environment variables and are not committed to the repository.
+
+## License
+
+This project is intended for demonstration and internal use.
